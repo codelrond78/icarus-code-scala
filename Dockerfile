@@ -8,7 +8,7 @@ RUN curl -fsSL https://code-server.dev/install.sh | sh
 WORKDIR /tmp
 RUN curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs
 RUN chmod +x cs
-RUN ./cs setup
+RUN yes | ./cs setup
 WORKDIR /app-ini
 COPY start.sh start.sh
 RUN chmod u+x start.sh

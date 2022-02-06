@@ -1,4 +1,4 @@
-FROM FROM openjdk:11
+FROM openjdk:11
 
 ARG DEBIAN_FRONTEND=noninteractive
 

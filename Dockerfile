@@ -12,8 +12,8 @@ RUN yes | ./cs setup
 WORKDIR /app-ini
 COPY start.sh start.sh
 RUN chmod u+x start.sh
-RUN echo "export PATH=\"$PATH:/root/.local/share/coursier/bin\" >> /root/.bashrc
-RUN echo "export PATH=\"$PATH:/usr/local/openjdk-11/bin\" >> /root/.bashrc
+RUN echo "export PATH=\"$PATH:/root/.local/share/coursier/bin\"" >> /root/.bashrc
+RUN echo "export PATH=\"$PATH:/usr/local/openjdk-11/bin\"" >> /root/.bashrc
 WORKDIR /app
 
 CMD ["/app-ini/start.sh"]

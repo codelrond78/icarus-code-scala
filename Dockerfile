@@ -1,4 +1,4 @@
-FROM denvazh/scala
+FROM FROM openjdk:11
 
 ARG DEBIAN_FRONTEND=noninteractive
 
